@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding :0;
+  box-sizing: border-box;
+}
+
+.imageContainer {
+  width: 100vw;
+  height: 90vh;
+}
+
+.imageContainer img {
+  max-width: 100%;
+  max-height: 90vh;
+
+  background-size: cover;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+
+  height: 10vh;
+  gap: 12px;
+}
+
+.controls input {
+  cursor: pointer;
+}
+
+.controls select {
+  height: 30px;
+  cursor: pointer;
+}
+
+.controls button {
+  height: 30px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+#loading {
+  opacity: 0;
+  visibility: hidden;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content:center;
+
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+
+  font-size: 2rem;
+}
+
+#loading.show {
+  opacity: 1;
+  visibility: visible;
+}
